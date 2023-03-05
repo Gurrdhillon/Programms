@@ -1,0 +1,19 @@
+package com.mycompany.a3;
+
+import com.codename1.ui.Command;
+import com.codename1.ui.events.ActionEvent;
+
+public class EmptyCommand extends Command {
+
+	public EmptyCommand(String command) {
+		super(command);
+		// TODO Auto-generated constructor stub
+	}
+	
+	@Override //do not forget @Override, makes sure you are overriding parent method
+	//invoked to perform the accelrate operation
+	public void actionPerformed(ActionEvent ev) {
+	   System.out.println("This is an emoty Command");
+	}
+
+}
